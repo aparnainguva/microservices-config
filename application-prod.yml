@@ -3,8 +3,7 @@ spring:
     name: CONFIG-PROD
 eureka:
   instance:
-    prefer-ip-address: true
-    appname: API-GATEWAY
+    prefer-ip-address: true    
   client:
     register-with-eureka: true
     fetch-registry: true
