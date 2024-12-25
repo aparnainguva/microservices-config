@@ -8,5 +8,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      default-zone: http://localhost:8761/eureka/
+      #With docker config use host.docker.internal as localhost is not accessible due to host os not being used
+      default-zone: http://host.docker.internal:8761/eureka/
+      #default-zone: http://localhost:8761/eureka/
 
